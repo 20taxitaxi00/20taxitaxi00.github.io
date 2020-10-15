@@ -1,0 +1,200 @@
+
+body {
+	margin-top: 70px;
+}
+/*headerここから*/
+header {
+	background-color: #222;
+	color: #eee;
+	font-size: 20px;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	margin-top: -70px;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	margin-left: 80px;
+}
+
+.icon img {
+	height: 100px;
+	width: 300px;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
+
+.header-right li:first-child {
+	margin-right: 30px;
+}
+/*headerここまで*/
+
+/*mainここから*/
+main {
+	display: flex;
+}
+/*sidebar*/
+.sidebar {
+	background-color: #222;
+	color: #eee;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.side-title {
+	font-size: 40px;
+	margin: 30px;
+}
+
+.side-menu {
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 130px;
+}
+
+.side-menu li {
+	margin-top: 15px;
+}
+
+
+/*li.single ul.ddmenu {
+	overflow: hidden;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+li.single:hover ul.ddmenu {
+visibility: visible;
+opacity: 1;
+}*/
+
+/*sidebar終*/
+/*contents*/
+.contents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #222;
+	color: #eee;
+	width: 80%;
+}
+
+.contents-title {
+	font-size: 40px;
+	margin: 60px;
+}
+
+.contents p {
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
+}
+
+.contents img {
+	margin-top: 70px;
+	margin-bottom: 100px;
+	height: 650px;
+	width: 600px;
+}
+/*contents終*/
+/*mainここまで
+
+/*form*/
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 350px;
+	background-color: #222;
+	color: #eee;
+}
+
+.form {
+	margin: 50px 0 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.form-title {
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
+}
+/*form左*/
+.form-left {
+	margin-right: 50px;
+}
+
+.form .name {
+	margin-bottom: 20px;
+}
+
+.form .name, .form .email {
+	height: 50px;
+	width: 400px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+/*form右*/
+.form .inquiry {
+	height: 120px;
+	width: 400px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+button {
+	border: 3px solid ;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	transition-duration: 500ms;
+	margin-bottom: 100px
+}
+
+button:hover {
+	background-color: #555;
+}
+/*formここまで*/
+
+/*footerここから*/
+footer {
+	background-color: #555;
+	color: #eee;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 5px 50px;
+}
+
+h4 {
+	display: flex;
+	align-items: center;
+}
+
+.my-insta {
+	height: 120px;
+}
+/*footerここまで
