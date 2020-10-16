@@ -1,0 +1,42 @@
+#page {
+	height: 100%;
+	width: 100%;
+}
+
+/*cover ここから*/
+#cover {
+	background-image: url(../img/cover.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	height: 500px;
+}
+
+.title {
+	font-size: 64px;
+}
+/*cover ここまで*/
+
+
+/*header ここから*/
+
+/*header ここまで*/
+
+
+/*main ここから*/
+
+/*main ここまで*/
+
+
+/*contact ここから*/
+
+/*contact ここまで*/
+
+
+/*footer ここから*/
+
+/*footer ここまで*/
