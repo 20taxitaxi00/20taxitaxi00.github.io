@@ -23,7 +23,35 @@
 
 
 /*header ここから*/
+header {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
+/*header 左*/
+.icon {
+	display: flex;
+	align-items: center;
+	margin-left: 80px;
+}
+/*header 右*/
+.header-right {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
 
+.header-right li {
+	margin-right: 30px;
+}
+
+.header-right li:last-child {
+	margin-right: 0;
+}
 /*header ここまで*/
 
 
