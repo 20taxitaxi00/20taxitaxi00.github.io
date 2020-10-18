@@ -13,7 +13,7 @@
 	justify-content: center;
 	text-align: center;
 	color: #fff;
-	height: 500px;
+	height: 650px;
 }
 
 .title {
@@ -38,6 +38,10 @@ header {
 	align-items: center;
 	margin-left: 80px;
 }
+
+.icon span {
+	margin-left: 50px;
+}
 /*header 右*/
 .header-right {
 	display: flex;
@@ -56,6 +60,9 @@ header {
 
 
 /*main ここから*/
+/*main ①*/
+
+/*main ②*/
 
 /*main ここまで*/
 
