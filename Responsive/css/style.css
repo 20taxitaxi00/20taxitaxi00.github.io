@@ -83,7 +83,8 @@ main {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 36px;
+	text-align: center;
 }
 
 .text p {
@@ -93,15 +94,97 @@ h2 {
 	font-weight: bold;
 }
 /*main ②*/
+.hobby {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 
+.hobby-list {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.hobby-list li {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-right: 100px;
+}
+
+.hobby-list li:last-child {
+	margin-right: 0;
+}
+
+.hobby-list li span {
+	font-size: 24px;
+	margin-top: 20px;
+}
 /*main ここまで*/
 
 
 /*contact ここから*/
+aside {
+	background-image: url(../img/nozokimi.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 500px;
+}
 
+.contactspace {
+	background-color: rgba(255,255,255,0.8);
+	margin: 0 auto;
+	padding: 20px 0;
+	box-sizing: border-box;
+	width: 700px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+.form p {
+	margin-top: 30px;
+}
+
+.form span {
+	font-size: 30px;
+}
 /*contact ここまで*/
 
 
 /*footer ここから*/
+footer {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+}
 
+.footer-left {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
+
+.footer-left li {
+	margin-right: 30px;
+}
+
+.footer-left li:first-child {
+	margin-left: 80px;
+}
+
+.footer-right {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+}
 /*footer ここまで*/
