@@ -32,6 +32,7 @@ header {
 	justify-content: space-between;
 	height: 100px;
 }
+
 /*header 左*/
 .icon {
 	display: flex;
@@ -51,6 +52,7 @@ header {
 
 .header-right li {
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 .header-right li:last-child {
@@ -110,6 +112,7 @@ h2 {
 	flex-direction: column;
 	text-align: center;
 	margin-right: 100px;
+	cursor: pointer;
 }
 
 .hobby-list li:last-child {
@@ -149,10 +152,25 @@ h3 {
 
 .form p {
 	margin-top: 30px;
+	cursor: pointer;
 }
 
 .form span {
 	font-size: 30px;
+}
+
+.form .btn {
+	text-align: center;
+	display: block;
+	border: 2px solid #fff;
+	padding: 8px 5px;
+	margin: 20px auto;
+	width: 450px;
+}
+
+.form .btn:hover {
+	background-color: #333;
+	color: #fff;
 }
 /*contact ここまで*/
 
@@ -176,6 +194,7 @@ footer {
 
 .footer-left li {
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 .footer-left li:first-child {
@@ -188,3 +207,25 @@ footer {
 	margin-right: 80px;
 }
 /*footer ここまで*/
+
+/*smartphone*/
+@media screen and (max-width: 480px) {
+	body {
+		min-width: 375px;
+	}
+
+	/*header*/
+	/*header*/
+
+	/*main*/
+	/*main*/
+
+	/*contact*/
+	/*contact*/
+
+	/*footer*/
+	/*footer*/
+}
+
+
+/*smartphoneここまで*/
