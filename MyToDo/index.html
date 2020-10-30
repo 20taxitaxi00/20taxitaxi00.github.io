@@ -3,20 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>To Do Management</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/67700d3e86.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-            <h1>To Do List</h1>
-            <form>
-                <input type="text" id="input" placeholder="Add your task here">
-                <input type="button" id="btn" value="Add">
-            </form>
-            <ul class="todo-list">
-                <!-- ここに要素が追加されていく -->
+        <header>
+            <input type="text" id="task" placeholder="Add your task here!!">
+            <i class="fas fa-plus-circle fa-3x"></i>
+        </header>
+        <main>
+            <!-- 残っている仕事数 -->
+            <h1 id="remaind">There are 3 tasks left.</h1>
+            <!-- 未完了のタスク -->
+            <h2 class="title">Not yet</h2>
+            <ul class="list">
+                <li>ランニング3㎞
+                    <div class="buttons">
+                        <button class="done">
+                            <i class="far fa-check-square fa-2x"></i>
+                        </button>
+                        <button class="remove">
+                            <i class="far fa-trash-alt fa-2x"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>英単語10個
+                    <div class="buttons">
+                        <button class="done">
+                            <i class="far fa-check-square fa-2x"></i>
+                        </button>
+                        <button class="remove">
+                            <i class="far fa-trash-alt fa-2x"></i>
+                        </button>
+                    </div>
+                </li>   
+                <li>読書
+                    <div class="buttons">
+                        <button class="done">
+                            <i class="far fa-check-square fa-2x"></i>
+                        </button>
+                        <button class="remove">
+                            <i class="far fa-trash-alt fa-2x"></i>
+                        </button>
+                    </div>
+                </li>
             </ul>
+            <!-- 完了済みのタスク -->
+            <h2 class="title">Done</h2>
+            <ul class="list">
+                <li>課題提出
+                    <div class="buttons">
+                        <button class="done">
+                            <i class="far fa-check-square fa-2x"></i>
+                        </button>
+                        <button class="remove">
+                            <i class="far fa-trash-alt fa-2x"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <script src="assets/js/main.js"></script>
     </div>
-    <script src="./assets/js/main.js"></script>
 </body>
 </html>

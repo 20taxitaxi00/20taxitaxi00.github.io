@@ -1,71 +1,94 @@
-* {
-	margin: 0;
-	padding: 0;
-	color: #232b2b;
-}
-ul {
-	list-style: none;
-}
 body {
-	width: 100vw;
+	background-color: #cf9;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+	background-color: #6f9;
+}
+
+#task {
+	width: 80%;
+	color: #000;
+	font-size: 15px;
+	text-indent: 18px;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 25px;
+	border: none;
+}
+
+/* main */
+main {
+
+}
+/*  残っている仕事数 */
+#remaind {
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	margin: 30px;
+}
+
+
+/*  未完了のタスク */
+/*  完了済みのタスク */
+.title {
+	margin: 15px 0;
+	padding-left: 50px;
+	color: #000;
+	font-size: 30px;
+}
+
+
+/* 追加されるリストアイテムのCSS */
+.list li {
+	font-size: 18px;
+	color: #000;
+	line-height: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding: 15px 100px 15px 15px;
+	height: 50px;
+}
+
+.list li:last-child {
+	margin-bottom: 0;
+}
+
+.buttons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 40px;
-	width: 40%;
-}
-h1 {
-	text-align: center;
-}
-form {
-	width: 100%;
-	height: 36px;
-	display: flex;
-	margin: 30px auto 20px;
-}
-input[type="text"] {
-	width: 75%;
-	padding: 3px 7px;
-	border: 1px solid #232b2b;
-	border-radius: 3px 0 0 3px;
-}
-#btn {
-	width: 25%;
-	padding: 5px;
-	background-color: #093d86;
-	color: white;
+
+.buttons button {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
 	border: none;
-	border-radius: 0 3px 3px 0;
 	cursor: pointer;
 }
 
-.todo-list {
-	width: 100%;
-	border-radius: 3px;
+.buttons button:last-child {
+	margin-right: 0;
 }
-/* 追加されるリストアイテムのCSS */
-li {
-	height: 30px;
-	border: 1px solid rgb(187, 187, 187);
-	border-bottom: none;
-	padding: 3px 11px;
-	display: flex;
-	align-items: center;
-	/* ボタンが追加された時、タスクの内容とボタンを左右に配置 */
-	justify-content: space-between;
+
+.done {
+	color: #6f9;
+	background-color: #fff;
 }
-/* 最後のli要素のみ、border-bottomがある */
-li:last-child {
-	border-bottom: 1px solid rgb(187, 187, 187);
-}
-/* 追加されるリストアイテムのDeleteボタン */
-.delete {
-	font-size: 12px;
-	color: rgb(202, 20, 20);
-	cursor: pointer;
+
+.remove {
+	color: #f00;
+	background-color: #fff;
 }
