@@ -21,9 +21,21 @@ header {
 }
 
 /* main */
-main {
-
+span {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 40px;
 }
+
+p {
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
 /*  残っている仕事数 */
 #remaind {
 	display: flex;	

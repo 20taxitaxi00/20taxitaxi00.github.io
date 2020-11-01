@@ -25,6 +25,7 @@ if (localStorage.getItem("todoList")){
 if (localStorage.getItem("doneList")){
 	// データを取り出して、配列doneに代入
 	done = JSON.parse(localStorage.getItem("doneList"));
+	// }
 } else {
 	// 空の配列を代入する
 	done = [];
@@ -123,8 +124,16 @@ function localStorageDone(){
 };
 
 
+// その他のDOM
+// 未完了タスクカウント
+let h1 = document.querySelector("h1");
+let span = document.querySelector("span");
+span.textContent = data.length;
 
-
+// 言葉出す
+let word = ["祈るな、手が塞がる","めちゃめちゃ怯えろ、そしてそれをやれ","勇気とは、プレッシャーに負けない品格のことだ","方法は見つける。なければ作る。","自分に打ち勝つことが、最も偉大な勝利である","今の時代を作れるのは、今を生きている人間だけだ"];
+var random = Math.floor(Math.random() * word.length);
+document.getElementById("word").textContent = word[random];
 
 
 
