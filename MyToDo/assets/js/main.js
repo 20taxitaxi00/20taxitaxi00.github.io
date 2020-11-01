@@ -4,23 +4,34 @@ let removeIcon = '<i class="far fa-trash-alt fa-2x"></i>';
 let addBtn = document.getElementById("add");
 let data;
 
+// let displayText = data;
+// console.log(displayText);
+
 // ローカルストレージの処理
 // データがあったら
 if (localStorage.getItem("todoList")){
 	// データを取り出して、配列dataに代入
 	data = JSON.parse(localStorage.getItem("todoList"));
+	for (let value of data){
+		add_li_tag(value);
+	}
 // なかったら
 } else {
 	// 空の配列を代入する
 	data = [];
 }
 
+console.log(data);
+
 // addボタンの処理
 addBtn.addEventListener("click", function(){
 	let task_input = document.getElementById("input");
 	if (task_input != ""){
 		add_li_tag(task_input.value);
-		localStorage.setItem("todoList", JSON.stringify(data));
+		// ローカルストレージへの保存
+		data.push(task_input.value);
+		localStorageData();
+		// 入力欄をからにする
 		task_input.value = "";
 	}
 });
@@ -28,7 +39,6 @@ addBtn.addEventListener("click", function(){
 
 
 // ----- 関数 -----
-
 // 追加マークを押した時
 function add_li_tag(task_text){
 	let todo_list = document.getElementById("not-yet");
@@ -63,7 +73,6 @@ function doneTask(){
 		return;
 	}
 	let value = task.textContent;	
-
 	// doneに追加
 	let target = document.getElementById("done");
 	target.insertBefore(task, target.childNodes[0]);
@@ -74,16 +83,21 @@ function removeTask(){
 	let hantei = confirm("本当に削除しますか？");
 	if (hantei == true){
 		// 画面から削除
+		console.log(this.parentNode.parentNode.textContent);
 		let task = this.parentNode.parentNode;
 		let id = task.parentNode.id;
 		let value = task.textContent;
+		data.splice(data.indexOf(value))
+		// ローカルストレージ
+		localStorageData();
 		task.remove();
-		// task = task.replace('Delete',"");
-		// data.splice(data.indexO(task),1);
-		// localStorage.setItem("todoList", JSON.stringify(data));	
 	}
 };
 
+// ローカルストレージに保存
+function localStorageData(){
+	localStorage.setItem("todoList",JSON.stringify(data));
+};
 
 
 
