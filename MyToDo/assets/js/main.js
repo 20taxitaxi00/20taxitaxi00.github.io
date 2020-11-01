@@ -3,6 +3,7 @@ let doneIcon = '<i class="far fa-check-square fa-2x"></i>';
 let removeIcon = '<i class="far fa-trash-alt fa-2x"></i>';
 let addBtn = document.getElementById("add");
 let data;
+let done;
 
 // let displayText = data;
 // console.log(displayText);
@@ -19,6 +20,14 @@ if (localStorage.getItem("todoList")){
 } else {
 	// 空の配列を代入する
 	data = [];
+};
+
+if (localStorage.getItem("doneList")){
+	// データを取り出して、配列doneに代入
+	done = JSON.parse(localStorage.getItem("doneList"));
+} else {
+	// 空の配列を代入する
+	done = [];
 }
 
 console.log(data);
@@ -76,6 +85,16 @@ function doneTask(){
 	// doneに追加
 	let target = document.getElementById("done");
 	target.insertBefore(task, target.childNodes[0]);
+	// 配列doneに要素を追加して保存
+	done.push(value);
+	localStorageDone();
+	// todoから削除
+	let del_text = this.parentNode.parentNode.textContent;
+	console.log(del_text);
+	data.splice(data.indexOf(del_text),1);
+	this.remove();
+	// 削除したものをローカルストレージへ
+	localStorageData();
 	};
 
 //削除マークを押した時 
@@ -87,7 +106,7 @@ function removeTask(){
 		let task = this.parentNode.parentNode;
 		let id = task.parentNode.id;
 		let value = task.textContent;
-		data.splice(data.indexOf(value))
+		data.splice(data.indexOf(value),1)
 		// ローカルストレージ
 		localStorageData();
 		task.remove();
@@ -97,6 +116,10 @@ function removeTask(){
 // ローカルストレージに保存
 function localStorageData(){
 	localStorage.setItem("todoList",JSON.stringify(data));
+};
+
+function localStorageDone(){
+	localStorage.setItem("doneList",JSON.stringify(done));
 };
 
 
