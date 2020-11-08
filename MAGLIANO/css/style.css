@@ -38,6 +38,88 @@ header {
 .header-right li:first-child {
 	margin-right: 30px;
 }
+
+/*ハンバーガーメニュー*/
+.hamburger {
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+  display: none;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after {
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  transition: all 0.5s; 
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+/*ハンバーガーメニューここまで*/
+
+/*ドロワー*/
+#drower-bg {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.drower {
+  position: absolute;
+  top: 70px;
+  right: -200px;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(8, 8, 8, .5);
+  transition-duration: 600ms;
+}
+
+.drower.on {
+  right: 0;
+  transition-duration: 600ms;
+}
+
+.drower li {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*ドロワーここまで*/
+
 /*headerここまで*/
 
 /*mainここから*/
@@ -72,18 +154,6 @@ main {
 .side-menu li {
 	margin-top: 15px;
 }
-
-
-/*li.single ul.ddmenu {
-	overflow: hidden;
-	-webkit-transition: all .2s ease;
-	transition: all .2s ease;
-}
-
-li.single:hover ul.ddmenu {
-visibility: visible;
-opacity: 1;
-}*/
 
 /*sidebar終*/
 /*contents*/
@@ -210,7 +280,7 @@ h4 {
 	}
 /*header*/
 	.icon {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 
 	.icon img {
@@ -221,6 +291,12 @@ h4 {
 
 	.header-right {
 		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		margin-right: 20px;
+		margin-bottom: -5px;
 	}
 /*headerここまで*/
 

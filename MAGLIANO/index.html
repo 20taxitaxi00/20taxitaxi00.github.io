@@ -6,6 +6,7 @@
 	<title>僕が好きなブランド</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head/>
 <body>
 	<!-- header -->
@@ -18,6 +19,20 @@
 		<ul class="header-right">
 			<li>sign up</li>
 			<li>login</li>
+		</ul>
+		<!-- ハンバーガーメニュー -->
+		<p id="hambtn" class="js-hamburger hamburger">
+	        <span></span>
+	    </p>
+		<!-- ドロワー -->
+		<div id="drower-bg" ></div>
+		<ul class="drower js-drower">
+			<li class="js-register">Sign up</li>
+			<li class="js-login">Login</li>
+			<li>COLECTION</li>
+			<li>About</li>
+			<li>Category</li>
+			<li>Contact</li>
 		</ul>
 	</header>
 	<!-- headerここまで -->
@@ -89,5 +104,6 @@
         	<figure><img class="my-insta" src="img/insta.JPG"></figure>
 	</footer>
 	<!-- footerここまで -->
+	<script defer src="js/app.js"></script>
 </body>
 </html>
