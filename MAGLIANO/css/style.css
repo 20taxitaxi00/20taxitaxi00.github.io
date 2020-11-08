@@ -200,37 +200,114 @@ h4 {
 /*footerここまで
 
 
+
+
 /*レスポンシブ対応*/
 /*スマホ*/
-@media screen and (max-width: 480px){
-
-body{
-	min-width: 375px;
-}
-
+@media screen and (max-width: 480px) {
+	body {
+		min-width: 375px;
+	}
 /*header*/
-.icon {
-	margin-left: 20px;
-}
+	.icon {
+		margin-left: 10px;
+	}
 
-.header-right {
-	display: 
-}
+	.icon img {
+		height: 50px;
+		width: 150px;
+
+	}
+
+	.header-right {
+		display: none;
+	}
 /*headerここまで*/
 
 
 /*main*/
+
 /*sidebar*/
+.sidebar {
+	display: none;
+}
 /*contents*/
+.contents {
+	width: 100%;
+	margin-top: -10px;
+}
+
+.contents-title {
+	font-size: 25px;
+	margin: 30px;
+}
+
+.contents p {
+	font-size: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.contents img {
+	margin-top: 35px;
+	margin-bottom: 100px;
+	height: 325px;
+	width: 300px;
+}
 /*mainここまで*/
 
 
 /*form*/
+.form-title {
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+aside .form {
+	flex-flow: column nowrap;
+	margin: 30px 0 ;
+}
+
+.form .name, .form .email, .form .inquiry {
+	width: 80%;
+}
+
+.form .name, .form .email {
+	height: 30px;
+}
+
+.form .inquiry {
+	height: 50px;
+}
+
+.form-left {
+	margin-right: 0;
+	margin-bottom: 30px;
+}
+
+aside button {
+	font-size: 16px;
+	padding: 7px 15px;
+}
 /*formここまで*/
 
 
 /*footer*/
+footer {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+.my-insta {
+	display: none;
+}
 /*footerここまで*/
+
 }
 
 

@@ -218,6 +218,9 @@ footer {
 	}
 
 	/*header*/
+	.header-right {
+		display: none;
+	}
 	/*header*/
 
 	/*main*/
