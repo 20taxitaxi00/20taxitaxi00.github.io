@@ -198,3 +198,41 @@ h4 {
 	height: 120px;
 }
 /*footerここまで
+
+
+/*レスポンシブ対応*/
+/*スマホ*/
+@media screen and (max-width: 480px){
+
+body{
+	min-width: 375px;
+}
+
+/*header*/
+.icon {
+	margin-left: 20px;
+}
+
+.header-right {
+	display: 
+}
+/*headerここまで*/
+
+
+/*main*/
+/*sidebar*/
+/*contents*/
+/*mainここまで*/
+
+
+/*form*/
+/*formここまで*/
+
+
+/*footer*/
+/*footerここまで*/
+}
+
+
+
+
