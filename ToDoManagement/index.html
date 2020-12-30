@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/67700d3e86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <input type="text" id="input" placeholder="Add your task here!!">
+        <i id="add" class="fas fa-plus fa-2x"></i>
+    </header>
+    <main>
+        <!-- 残っている仕事数 -->
+        <h1 id="remind">There are<span></span>tasks left.</h1>
+        <p id="word"></p>
+
+        <hr>
+        <hr>
+        <!-- 未完了のタスク -->
+        <h2 class="title">Not yet</h2>
+        <ul class="list" id="not-yet"></ul>
+
+        <hr>
+        <!-- 完了済みのタスク -->
+        <h2 class="title">Done</h2>
+        <ul class="list" id="done"></ul>
+        <hr>
+        
+    </main>
+    <!-- script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
