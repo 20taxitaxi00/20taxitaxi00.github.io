@@ -245,6 +245,31 @@ hr {
   right: 0;
 }
 
+article button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 35px;
+  width: 110px;
+  padding: 1px 5px;
+  border: solid 2px #000;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+
+article button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+article button:last-child {
+  display: none;
+
+}
+
 /* shadow */
 .shadow {
   display: inline-block;

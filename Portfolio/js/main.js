@@ -51,12 +51,12 @@ $(function(){
     }
     
     // 最初にロゴがfade
-    setTimeout(function(){
-		$('.logo-fade p').fadeIn(1000);
-    },500);
-    setTimeout(function(){
-		$('.logo-fade').fadeOut(800);
-    },2500);
+    // setTimeout(function(){
+		// $('.logo-fade p').fadeIn(1000);
+    // },500);
+    // setTimeout(function(){
+		// $('.logo-fade').fadeOut(800);
+    // },2500);
 
     // タブメニュー
     $('.brands-list a').on('click', function(){
@@ -71,6 +71,43 @@ $(function(){
         return false;
 
 
+    });
+
+    // もっと見る & 表示数を減らす
+    var $numberListLen = $('.column section').length;
+    var defaultNum = 3;
+    var addNum = 3;
+    var currentNum = 0;
+
+    $('.column').each(function(){
+      $(this).find('#more-btn').show();
+      $(this).find('#close-btn').hide();
+
+      $(this).find('section:not(:lt('+defaultNum+'))').hide();
+
+      currentNum = defaultNum;
+
+      $('#more-btn').click(function(){
+        currentNum += addNum;
+
+        $(this).parent().find('section:lt('+currentNum+')').slideDown();
+
+        if($numberListLen <= currentNum) {
+          currentNum = defaultNum;
+          indexNum = currentNum - 1;
+
+          $('#more-btn').hide();
+          $('#close-btn').show();
+          $('#close-btn').css('display','flex');
+
+          $('#close-btn').click(function(){
+            $(this).parent().find('section:gt('+indexNum+')').slideUp();
+
+            $(this).hide();
+            $('#more-btn').show();
+          });
+        }
+      });
     });
 
     // スライダー
@@ -92,3 +129,4 @@ $(function(){
 
 
 });
+
