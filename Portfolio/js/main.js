@@ -51,12 +51,12 @@ $(function(){
     }
     
     // 最初にロゴがfade
-    // setTimeout(function(){
-		// $('.logo-fade p').fadeIn(1000);
-    // },500);
-    // setTimeout(function(){
-		// $('.logo-fade').fadeOut(800);
-    // },2500);
+    setTimeout(function(){
+		$('.logo-fade p').fadeIn(1000);
+    },500);
+    setTimeout(function(){
+		$('.logo-fade').fadeOut(800);
+    },2500);
 
     // タブメニュー
     $('.brands-list a').on('click', function(){
@@ -110,23 +110,24 @@ $(function(){
       });
     });
 
-    // スライダー
-    var mySwiper = new Swiper ('.swiper-container', {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 0,
-        centeredSlides : true,
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        breakpoints: {
-          767: {
-            slidesPerView: 1,
-            spaceBetween: 0
-          }
-        }
-      })
+    
 
 
 });
 
+// スライダー
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  centeredSlides : true,
+  pagination: '.swiper-pagination',
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    }
+  }
+})
