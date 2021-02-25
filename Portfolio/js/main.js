@@ -51,12 +51,12 @@ $(function(){
     }
     
     // 最初にロゴがfade
-    setTimeout(function(){
-		$('.logo-fade p').fadeIn(1000);
-    },500);
-    setTimeout(function(){
-		$('.logo-fade').fadeOut(800);
-    },2500);
+    // setTimeout(function(){
+		// $('.logo-fade p').fadeIn(1000);
+    // },500);
+    // setTimeout(function(){
+		// $('.logo-fade').fadeOut(800);
+    // },2500);
 
     // タブメニュー
     $('.brands-list a').on('click', function(){
