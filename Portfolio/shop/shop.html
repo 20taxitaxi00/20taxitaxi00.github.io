@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+</head>
 </head>
 <body>
     <!-- header -->
@@ -80,14 +82,13 @@
                 <p>そのため Adererror の生み出す洋服はファッション デザイナーの生み出すそれとは異なり異色の魅力を放っていると言える。</p>
             </div> 
             <!-- collection -->
-            <div class="swiper-container">
+            <div class="swiper-container slider1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../img/ader/look1.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/ader/look2.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/ader/look3.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/ader/look4.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/ader/look5.JPG" alt=""></div>
-                    ...
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -108,14 +109,13 @@
                 <p>2013年に「Tokyo新人デザイナーファッション大賞」プロ部門において、最高位の東京都知事賞を受賞。</p>
             </div> 
             <!-- collection -->
-            <div class="swiper-container">
+            <div class="swiper-container slider2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../img/doublet/look1.JPG" alt="" width="440px" height="660px"></div>
                     <div class="swiper-slide"><img src="../img/doublet/look2.JPG" alt="" width="440px" height="660px"></div>
                     <div class="swiper-slide"><img src="../img/doublet/look3.JPG" alt="" width="440px" height="660px"></div>
                     <div class="swiper-slide"><img src="../img/doublet/look4.JPG" alt="" width="440px" height="660px"></div>
                     <div class="swiper-slide"><img src="../img/doublet/look5.JPG" alt="" width="440px" height="660px"></div>
-                    ...
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -136,14 +136,13 @@
                 <p>カルチャーの要素を色濃く取り入れたコレクションを展開する。</p>
             </div> 
             <!-- collection -->
-            <div class="swiper-container">
+            <div class="swiper-container slider3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../img/littlebig/look1.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/littlebig/look2.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/littlebig/look3.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/littlebig/look4.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/littlebig/look5.JPG" alt=""></div>
-                    ...
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -165,14 +164,13 @@
                 <p>ブランドの根底には、フランケンシュタインからインスパイアされた思想やスタイルがデザインの細部から感じられ、現実主義の中の非現実的な魔法のようなエッセンスが感じられる。</p>
             </div> 
             <!-- collection -->
-            <div class="swiper-container">
+            <div class="swiper-container slider4">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../img/magliano/look1.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/magliano/look2.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/magliano/look3.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/magliano/look4.JPG" alt=""></div>
                     <div class="swiper-slide"><img src="../img/magliano/look5.JPG" alt=""></div>
-                    ...
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -223,8 +221,134 @@
 
 
     <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="../js/main.js"></script>
+    <script>
+        // var MySwiper = new Swiper ('.swiper-container', {
+        //         loop: true,
+        //         slidePreView: 2,
+        //         spaceBetween:0,
+        //         centeredSlides: true,
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev'
+        //         }
+        // })
+
+        var slider1 = new Swiper ('.slider1', {
+            loop: true,
+            slidePreView: 2,
+            spaceBetween:0,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+
+        var slider2 = new Swiper ('.slider2', {
+            loop: true,
+            slidePreView: 2,
+            spaceBetween:0,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+
+        var slider3 = new Swiper ('.slider3', {
+            loop: true,
+            slidePreView: 2,
+            spaceBetween:0,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+
+        var slider4 = new Swiper ('.slider4', {
+            loop: true,
+            slidePreView: 2,
+            spaceBetween:0,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        })
+
+        // スライダー
+        // var slider1 = new Swiper ('.slider1', {
+        // loop: true,
+        // slidesPerView: 2,
+        // spaceBetween: 0,
+        // centeredSlides : true,
+        // pagination: '.swiper-pagination',
+        // // navigation: {
+        // //     nextEl: '.swiper-button-next',
+        // //     prevEl: '.swiper-button-prev'
+        // // },
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        // breakpoints: {
+        //     767: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0
+        //     }
+        // }
+        // })
+
+        // var slider2 = new Swiper ('.slider2', {
+        // loop: true,
+        // slidesPerView: 2,
+        // spaceBetween: 0,
+        // centeredSlides : true,
+        // pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        // breakpoints: {
+        //     767: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0
+        //     }
+        // }
+        // })
+
+        // var slider3 = new Swiper ('.slider3', {
+        // loop: true,
+        // slidesPerView: 2,
+        // spaceBetween: 0,
+        // centeredSlides : true,
+        // pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        // breakpoints: {
+        //     767: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0
+        //     }
+        // }
+        // })
+
+        // var slider4 = new Swiper ('.slider4', {
+        // loop: true,
+        // slidesPerView: 2,
+        // spaceBetween: 0,
+        // centeredSlides : true,
+        // pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        // breakpoints: {
+        //     767: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0
+        //     }
+        // }
+        // })
+    </script>
 </body>
 </html>
